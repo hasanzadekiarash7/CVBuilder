@@ -1,5 +1,10 @@
 <template>
-  <div class="special-card" :data-aos="$viewport.isLessThan('tablet') ? 'fade-in' : ''">
+  <div
+    class="special-card"
+    :data-aos="$viewport.isLessThan('tablet') ? 'zoom-in' : ''"
+    data-aos-duration="1000"
+    data-aos-easing="ease"
+  >
     <img
       src="https://cvbuilder.me/images/features/resume-templates.png"
       alt=""
@@ -16,5 +21,5 @@
 <script setup lang="ts"></script>
 
 <style lang="scss" scoped>
-@import url('../../assets/interfaces/special-cards.scss');
+@import url("../../assets/interfaces/special-cards.scss");
 </style>

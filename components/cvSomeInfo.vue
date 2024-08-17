@@ -1,7 +1,9 @@
 <template>
   <div
     class="width-full mt-5 d-flex flex-center align-center"
-    data-aos="fade-in"
+    data-aos="zoom-in"
+    data-aos-duration="1000"
+    data-aos-easing="ease"
     style="padding: 50px 10px; background-color: #eee; direction: rtl"
   >
     <div class="max-width-1200 width-full d-flex info flex-space-between">

@@ -7,6 +7,7 @@
     <SideInfo :info-item="sideInfo2" />
     <SideInfo :info-item="sideInfo3" />
     <SideInfo :info-item="lastSideInfo" />
+    <faq />
   </div>
 </template>
 
