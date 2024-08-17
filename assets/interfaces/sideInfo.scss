@@ -1,0 +1,67 @@
+@import '../main.scss';
+
+.sideInfo {
+    gap: 30px;
+    
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        max-width: 400px;
+        background-color: #f7fbff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        padding: 20px;
+}
+
+    &-content {
+        width: 100%;
+        max-width: 600px;
+        @include flexMini(center, flex-start);
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (max-width: 850px) {
+            text-align: center;
+        @include flexMini();
+            p {
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width:450px) {
+            p {
+                font-size: 17px;
+            }
+
+            h1 {
+                font-size: 17px;
+                text-align: center;
+            }
+        }
+    }
+
+    &-btn {
+        width: 100%;
+
+        hr {
+            margin-bottom: 20px;
+            width: 100%;
+            background-color: #f1f1f1;
+            height: 1px;
+            border: none;
+        }
+    }
+    &-list{
+        margin-bottom: 30px;
+        text-align: right !important;
+        list-style-type: square !important;
+        margin-right: 20px;
+        padding: none;
+    }
+}
