@@ -1,0 +1,16 @@
+.btn {
+    border: none;
+    outline: none;
+    background-color: $secondary !important;
+    color: $white;
+}
+
+.cv-btn-special {
+    border-radius: 60px 0 120px 60px;
+    -webkit-border-radius: 60px 0 120px 60px;
+    -moz-border-radius: 60px 0 120px 60px;
+    -ms-border-radius: 60px 0 120px 60px;
+    -o-border-radius: 60px 0 120px 60px;
+    padding: 20px;
+    width: 350px;
+}

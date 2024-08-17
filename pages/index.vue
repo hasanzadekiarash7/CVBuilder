@@ -1,6 +1,8 @@
 <template>
-    <div>
-        <h1>home</h1>
+    <div class="width-full">
+        <MainHeader />
+        <CvFeatures />
+        <CvSomeInfo />
     </div>
 </template>
 

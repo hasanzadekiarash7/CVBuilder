@@ -16,7 +16,8 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     'nuxt-viewport',
     '@dargmuesli/nuxt-cookie-control',
-    'nuxt-auth-utils'
+    'nuxt-auth-utils',
+    'nuxt-aos'
   ],
   site:{
     url: 'https://example.com',
