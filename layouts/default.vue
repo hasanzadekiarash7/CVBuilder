@@ -1,6 +1,8 @@
 <template>
     <div>
-        <header></header>
+        <header>
+            <cv-navbar />
+        </header>
         <main>
             <slot></slot>
         </main>
