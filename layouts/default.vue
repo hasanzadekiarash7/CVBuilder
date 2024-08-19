@@ -6,7 +6,9 @@
         <main>
             <slot></slot>
         </main>
-        <footer></footer>
+        <footer class="mt-5">
+            <cv-footer />
+        </footer>
     </div>
 </template>
 

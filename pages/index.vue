@@ -8,6 +8,7 @@
     <SideInfo :info-item="sideInfo3" />
     <SideInfo :info-item="lastSideInfo" />
     <faq />
+    <CvCard />
   </div>
 </template>
 

@@ -1,0 +1,54 @@
+@import '../main.scss';
+
+.footer {
+    &-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+
+        @media screen and (max-width: 920px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 520px) {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.img-info-wrapper {
+    width: 100%;
+    max-width: 300px;
+    @include flexMini();
+    flex-direction: column;
+    @media screen and (max-width: 520px) {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.company-wrapper {
+    @include flexMini();
+    width: 100%;
+    max-width: 300px;
+
+    img {
+        width: 76px;
+        height: 76px;
+    }
+}
+
+.list-wrapper {
+    @include flexMini(flex-end, flex-end);
+    gap: 14px;
+    flex-direction: column;
+    @media screen and (max-width: 520px) {
+        justify-content: center;
+        align-items: center;
+    }
+}
