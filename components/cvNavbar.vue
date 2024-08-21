@@ -21,13 +21,13 @@
         </ul>
       </div>
       <div class="navbar-buttons">
-        <button class="btn cv-btn" v-if="$viewport.isGreaterThan('mobile')">
+        <button class="btn cv-btn" @click="router.push('/login')" v-show="$viewport.isGreaterThan('mobile')" v-if="!isLogin">
           sign in | login
         </button>
-        <!-- <button class="btn cv-btn">
+        <button class="btn cv-btn"  @click="router.push('/cvForm')" v-show="$viewport.isGreaterThan('mobile')" v-if="isLogin">
           user panel
           <Icon name="mdi:account" size="24" />
-        </button> -->
+        </button>
         <Icon
           name="mdi:translate"
           size="28"
@@ -49,6 +49,11 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 const showSideBar = ref(false);
+const router = useRouter()
+const isLogin = ref(false);
+onMounted(() => {
+  isLogin.value = JSON.parse(localStorage.getItem('user'))?.isLogin ? true : false
+})
 </script>
 
 <style lang="scss" scoped>

@@ -1,0 +1,54 @@
+@import '../main.scss';
+
+.form {
+    padding: 15px;
+
+    div {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.cv-login-input {
+    @extend %transition;
+    border: none;
+    outline: none;
+    border: 2px solid #ededed;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    &:hover {
+        border: 2px solid $primary;
+    }
+
+    &:focus {
+        border: 2px solid $primary;
+    }
+}
+
+.btn-login {
+    @extend %transition;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: $primary;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: $white;
+    &:hover {
+        background-color: #0c47ff;
+    }
+
+    &:focus {
+        background-color: #0c47ff;
+    }
+}

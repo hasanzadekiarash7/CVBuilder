@@ -17,7 +17,8 @@ export default defineNuxtConfig({
     'nuxt-viewport',
     '@dargmuesli/nuxt-cookie-control',
     'nuxt-auth-utils',
-    'nuxt-aos'
+    'nuxt-aos',
+    "nuxt-snackbar"
   ],
   site:{
     url: 'https://example.com',
@@ -52,5 +53,10 @@ export default defineNuxtConfig({
       {code:'en',dir: 'ltr', file:'./lang/en.js',iso:'en-US'},
     ],
     defaultLocale: 'en'
-  }
+  },
+    snackbar: {
+      bottom: true,
+      center: true,
+      duration: 5000
+    }
 })
