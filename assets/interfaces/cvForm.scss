@@ -47,3 +47,24 @@
         background-color: transparentize($color: #06B6D4, $amount: 0.6);
     }
 }
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.cv-form-input{
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    outline: none;
+    &:hover{
+        border: 1px solid #06B6D4;
+    }
+    &:focus{
+        border: 1px solid #06B6D4;
+    }
+}

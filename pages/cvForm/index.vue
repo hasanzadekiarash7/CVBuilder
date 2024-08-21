@@ -29,9 +29,9 @@
     </div>
     <div class="cv-form width-full max-width-1200">
         <Cv-bread-crumb :item="breadItems" />
-        <!-- <cv-form /> -->
+        <cv-form />
     </div>
-    <div class="d-flex flex-end flex-column gap-4 text-center" style="width: 100%; height: 100%; align-self: flex-end; margin-bottom: 30px; max-width: 150px;">
+    <div class="d-flex flex-end flex-column gap-4 text-center" style="width: 100%; height: 100%; align-self: flex-end; margin-bottom: 0px; max-width: 150px;">
         <button class="btn rounded-cv-btn persian-font bg-primary">مرحله بعدی</button>
         <button class="btn rounded-cv-btn persian-font bg-secondary" v-if="percentage === 101">دانلود رزومه</button>
     </div>

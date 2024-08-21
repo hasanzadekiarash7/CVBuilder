@@ -1,7 +1,7 @@
 <template>
   <div
     class="width-full bg-white d-flex flex-center gap-4"
-    style="padding: 5px 10px; overflow-x: auto;"
+    style="padding: 5px 10px; overflow-x: auto; border-radius: 7px;"
   >
     <div
       class="d-flex flex-center width-full gap-2"
